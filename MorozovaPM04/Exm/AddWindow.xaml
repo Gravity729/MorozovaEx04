@@ -1,0 +1,46 @@
+﻿<Window x:Class="Exm.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exm"
+        mc:Ignorable="d"
+        Title="Добавление заказа" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="пицца.png">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <StackPanel  Background="#F4E8D3">
+                <TextBlock Text="Добавление заказа" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="10" Foreground="#67BA80"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center">
+                <StackPanel >
+                    <TextBlock Text="Фамилия" HorizontalAlignment="Left"/>
+                    <TextBox Name="LastnameBox" Width="550" Margin="0 4 0 0"/>
+                </StackPanel>
+                <StackPanel >
+                    <TextBlock Text="Имя" HorizontalAlignment="Left"/>
+                    <TextBox Name="FirsnameBox" Width="550" Margin="0 4 0 0"/>
+                </StackPanel>
+                <StackPanel >
+                    <TextBlock Text="Отчество" HorizontalAlignment="Left"/>
+                    <TextBox Name="SurnameBox" Width="550" Margin="0 4 0 0"/>
+                </StackPanel>
+                <StackPanel >
+                    <TextBlock Text="Улица" HorizontalAlignment="Left"/>
+                    <TextBox Name="StreetBox" Width="550" Margin="0 4 0 0"/>
+                </StackPanel>
+                <StackPanel >
+                    <TextBlock Text="Дом" HorizontalAlignment="Left"/>
+                    <TextBox Name="HouseBox" Width="550" Margin="0 4 0 0"/>
+                </StackPanel>
+                <StackPanel >
+                    <TextBlock Text="Квартира" HorizontalAlignment="Left"/>
+                    <TextBox Name="RoomBox" Width="550" Margin="0 4 0 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10">
+                    <Button Click="BackButton" Content="Назад" HorizontalAlignment="Left" Margin="10" Width="150" Height="25" Background="#67BA80"/>
+                    <Button Click="SaveButton" Content="Сохранить" HorizontalAlignment="Left" Margin="10" Width="150" Height="25" Background="#67BA80"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
